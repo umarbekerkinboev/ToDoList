@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do list app</title>
+    <!-- <script
+      src="https://kit.fontawesome.com/5daa8eb347.js"
+      crossorigin="anonymous"
+    ></script> -->
+    <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/all.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <article class="main-container">
+      <!-- INPUT -->
+      <div class="input-part">
+        <input
+          type="text"
+          maxlength="45"
+          placeholder="Add new Todo..."
+          class="input"
+        />
+        <span class="plus-icon"> <i class="fa-solid fa-circle-plus"></i></span>
+      </div>
+      <!-- MAIN-PART -->
+      <div class="main-part">
+        <h1 class="title">Todo's</h1>
+        <h2 class="status">
+          <span class="total">3</span> Total,
+          <span class="complete">2</span> Completed and
+          <span class="pending">1</span> Pending
+        </h2>
+        <!-- MAIN TABLE -->
+        <div class="main-table">
+          <!-- Table headline -->
+          <div class="table-headline">
+            <h3 class="table-title">Todo Title</h3>
+            <h3 class="table-status">Status</h3>
+          </div>
+          <h2 class="nothingtodo">Nothing to do, let's change it!</h2>
+          <div class="todos"></div>
+        </div>
+      </div>
+    </article>
+    <!-- JS -->
+    <script src="app.js"></script>
+  </body>
+</html>
